@@ -1,4 +1,3 @@
-
 let Gpio = null;
 try {
     Gpio = require('onoff').Gpio;
@@ -21,7 +20,7 @@ function blinkLED() { //function to start blinking
 function endBlink() { //function to stop blinking
   clearInterval(blinkInterval); // Stop blink intervals
   LED.writeSync(0); // Turn LED off
-//   LED.unexport(); // Unexport GPIO to free resources
+  // LED.unexport(); // Unexport GPIO to free resources
 }
 
 setTimeout(endBlink, 5000); //stop blinking after 5 seconds
