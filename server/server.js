@@ -23,10 +23,10 @@ app.put('/led/on', (req, res) => {
     return res.sendStatus(204);   //no content, success case
 
 });
-// app.post('/led/on', (req, res) => {
-//     LED.writeSync(1);
-//     res.send('Led Turned on!')
-// });
+app.put('/led/off', (req, res) => {
+    gpioService.ledOff();
+    return res.sendStatus(204);
+});
 
 app.listen(port , () =>{
     console.log(`Server is up at port ${port}`);

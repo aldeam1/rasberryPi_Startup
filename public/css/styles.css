@@ -13,7 +13,32 @@ button {
 	text-shadow:0px 1px 0px #2f6627;
   }
 
+  button:hover {
+    border: none;
+    background: #1F4C69;
+    color: white;
+    padding: 16px;
+  }
+
   .first_button {
-    display: block;
-    margin-bottom: 7px;
+    position: fixed;
+    top: 150;
+    background: rgba(250, 250, 250, 0.9);
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 0px 20px;
+    margin: 20px;
+    width: 230px;
+  }
+
+  .second_button {
+    position: fixed;
+    top: 150;
+    left: 350;
+    background: rgba(250, 250, 250, 0.9);
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 0px 20px;
+    margin: 20px;
+    width: 230px;
   }
