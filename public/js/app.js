@@ -6,7 +6,7 @@
 
 $("#turn-on").click (function(){
     $.ajax({
-        url:'http://localhost:3000/led/on',
+        url:'/led/on',
         type: 'PUT'
     });
     // return alert('Button Turn On was pressed');
@@ -14,7 +14,7 @@ $("#turn-on").click (function(){
 
 $("#turn-off").click (function(){
     $.ajax({
-        url:'http://localhost:3000/led/off',
+        url:'led/off',
         type: 'PUT'
     });
 })
