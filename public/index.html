@@ -3,28 +3,66 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Turn Led On/Off</title>
+    <title>Main Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css" >
 </head>
 
-<body>
-    <div class= "first_button"
-     <h3>This is a div for the first button</h3>
-     <button id="turn-on">Turn On Led</button>
-    </div>
+<body>  
+      <div class="container-fluid">
+        <div class="row">
+          <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Overview <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="led.html">Led</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="maintenage.html">Temperature</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="maintenage.html">Other</a>
+              </li>
+            </ul>
+  
+          </nav>
+  
+          <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
+            <h1>Automated System Overview</h1>
+  
+            <section class="row text-center placeholders">
+              <div class="col-6 col-sm-3 placeholder">
+                <img src="images/LED.png" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                <h4>Led Status</h4>
+                <div class="text-muted">Will show the status of the led</div>
+              </div>
+              <div class="col-6 col-sm-3 placeholder">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                <h4>Temperature</h4>
+                <span class="text-muted">Will show the temperature</span>
+              </div>
+              <div class="col-6 col-sm-3 placeholder">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+              <div class="col-6 col-sm-3 placeholder">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail">
+                <h4>Label</h4>
+                <span class="text-muted">Something else</span>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
 
-    <div class= "second_button"
-    <h3>This is a div for the second button</h3>
-    <button id ="turn-off">Turn OFF Led</button>
-   </div>
-
-   <img src="images/LED.png" style="width:100px;height:130px;position:absolute;top:100px;left:280px;">
-   <img src="images/nodejs-logo.png" style="width:100px;height:100px;bottom:50px;Left:10px;position: absolute;">
-   <img src="images/rpi-logo.png" style="width:100px;height:100px;bottom:50px;left:150px;;position: absolute;">
-
-    <!-- <a href="/aprinde">Turn On</a> -->
     <script src ="/js/libs/jquery-3.3.1.min.js"></script>
+    <script src="/js/libs/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src ="/js/libs/bootstrap.min.js"></script>
+    <script src="/js/libs/ie10-viewport-bug-workaround.js"></script>
     <script src ="/js/app.js"></script>
  
 </body>

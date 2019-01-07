@@ -8,6 +8,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.2.1",
     "express": "^4.16.4",
     "lodash": "^4.17.11",
     "onoff": "3.2.2",

@@ -1,0 +1,93 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Led Control</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css" >
+</head>
+<body>
+        <div class="container-fluid">
+                <div class="row">
+                  <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
+                    <ul class="nav nav-pills flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Overview <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="led.html">Led</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="maintenage.html">Temperature</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="maintenage.html">Other</a>
+                      </li>
+                    </ul>
+          
+                  </nav>
+
+                  <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
+                    <h1>Automated System Overview</h1>
+          
+                    <section class="row placeholders">
+                        <div class="card col-md-6" style="margin:50px 0">
+                            <!-- Default panel contents -->
+                            <div class="card-header">Led Control</div>
+                        
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    Led 1
+                                            <label class="switch ">
+                                                <input type="checkbox" id="led1" class="success">
+                                                <span class="slider round" ></span>
+                                             </label>
+                                </li>
+                                <li class="list-group-item">
+                                    Led 2
+                                            <label class="switch ">
+                                                <input type="checkbox" class="primary">
+                                                <span class="slider round"></span>
+                                            </label>
+                                </li>
+                                <li class="list-group-item">
+                                    Led 3
+                                            <label class="switch ">
+                                                <input type="checkbox" class="success">
+                                                <span class="slider round"></span>
+                                            </label>
+                                </li>
+                                <li class="list-group-item">
+                                    Led 4
+                                           <label class="switch ">
+                                                <input type="checkbox" class="info">
+                                                <span class="slider round"></span>
+                                             </label>
+                                </li>
+                                <li class="list-group-item">
+                                    Led 5
+                                           <label class="switch ">
+                                                <input type="checkbox" class="warning">
+                                                <span class="slider round"></span>
+                                            </label>
+                                </li>
+                                
+                            </ul>
+                        </div> 
+                    </section>
+                  </main>
+
+
+            </div>
+        </div>
+
+
+    <script src ="/js/libs/jquery-3.3.1.min.js"></script>
+    <script src="/js/libs/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src ="/js/libs/bootstrap.min.js"></script>
+    <script src="/js/libs/ie10-viewport-bug-workaround.js"></script>
+    <script src ="/js/app.js"></script>
+</body>
+</html>
