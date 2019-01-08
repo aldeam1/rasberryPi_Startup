@@ -28,6 +28,21 @@ app.put('/led/off', (req, res) => {
     return res.sendStatus(204);
 });
 
+// Adding routes for temperature sensor
+app.get('/temp/read', (req, res)=>{
+    return res.send({
+        status: gpioService.readTemp(),
+    });
+});
+
+app.get('temp/list', (req, res) => {
+    console.log('Retriving Sensor List');
+    return res.send({
+        status :gpioService.sensorList()
+    });
+});
+
+
 app.listen(port , () =>{
     console.log(`Server is up at port ${port}`);
 });
