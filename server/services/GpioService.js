@@ -1,5 +1,5 @@
 const config= require('../config/config.json');
-// const sensor = require('ds18b20-raspi');
+const sensor = require('ds18x20');
 
 let Gpio = null;
 try {
@@ -29,19 +29,27 @@ function ledOff () {
     return LED.writeSync(0);
 };
 
-// Adding the Sensor
+// Adding the Temperature Sensor ds18x20
+
+
 function readTemp(){
+    try {
+        sensor.loadDriver();
+        console.log('driver is loaded');
+    } catch (err) {
+        console.log('something went wrong loading the driver:', err)
+    }
     console.log('Reading Temperature from sensor');
-    return sensor.readSimpleC();
+    return sensor.getAll();
 };
 
 function sensorList(){
     console.log('Getting the temperature sensor list');
-    return sensor.list((err, deviceIds) => {
+    return sensor.list((err, listOfDeviceIds) => {
         if (err) {
             console.log(err);
         } else {
-            console.log(deviceIds);
+            console.log(listOfDeviceIds);
         }
     });
 }
