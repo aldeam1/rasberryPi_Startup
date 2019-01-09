@@ -9,10 +9,12 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.2.1",
+    "ds18b20-raspi": "^0.3.3",
     "express": "^4.16.4",
     "lodash": "^4.17.11",
     "onoff": "3.2.2",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "socket.io": "^2.2.0"
   },
   "description": ""
 }

@@ -20,16 +20,23 @@
 //     });
 // })
 //******************************************* */
+const socket = io();
+
+socket.on('connect', () => {
+    console.log('Connected to server');
+});
+
+socket.on('disconnect', () => {
+    console.log('Disconnected form server');
+});
 
 $("#led1").change(function(){
     if (this.checked) {
-        $("#led1").style("content:'On'")
         $.ajax({
             url:'/led/on',
             type: 'PUT'
         });  
     } else {
-        $("#led1").style("content:'Off'")
         $.ajax({
             url:'led/off',
             type: 'PUT'

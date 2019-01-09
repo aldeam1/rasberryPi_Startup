@@ -1,5 +1,5 @@
 const config= require('../config/config.json');
-const sensor = require('ds18b20-raspi');
+// const sensor = require('ds18b20-raspi');
 
 let Gpio = null;
 try {
